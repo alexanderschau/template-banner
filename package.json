@@ -1,12 +1,19 @@
 {
   "name": "banner-template",
   "version": "1.0.0",
-  "main": "index.js",
   "license": "MIT",
+  "source": "src/index.html",
   "scripts": {
-    "dev": "parcel src/index.html"
+    "dev": "parcel",
+    "build": "parcel build",
+    "format": "prettier -w ./src"
   },
   "devDependencies": {
-    "parcel": "^2.0.1"
+    "autoprefixer": "^10.4.0",
+    "parcel": "^2.0.1",
+    "postcss": "^8.3.11",
+    "postcss-cli": "^9.0.2",
+    "prettier": "^2.4.1",
+    "tailwindcss": "^2.2.19"
   }
 }
